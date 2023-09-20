@@ -14,6 +14,10 @@ def tf_similarity(s1, s2):
     return np.dot(vectors[0], vectors[1]) / (norm(vectors[0]) * norm(vectors[1]))
 
 
-s1 = '今天是周天，天气晴朗，我晚上要去看电影啊啊啊.'
-s2 = '今天是周天，天气晴朗，我晚上要去看电影.'
-print(tf_similarity(s1, s2))
+# s1 = '今天是周天，天气晴朗，我晚上要去看电影啊啊啊.开挖掘机,我靠'
+# s2 = '今天是周天，天气晴朗，我晚上要去看电影.阿里阿里巴巴'
+# print(tf_similarity(s1, s2))
+
+if __name__ == '__main__':
+    import SRC
+    SRC.get_addr()

@@ -38,9 +38,10 @@ def get_addr():
             raise IndexError
         else:
             diff_seek(addr1, addr2)
-            # print(addr1)
-            # print(addr2)
-            return None
+            print(addr1)
+            print(addr2)
+        return None
+
     except IndexError as e:
         print("请你传入,源文件和待检测文件的地址!\n")
 

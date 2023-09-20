@@ -1,6 +1,7 @@
 import sys
 
 import SRC.main
+import Test.test
 
 
 def get_addr():
@@ -11,9 +12,11 @@ def get_addr():
         if addr1 == "" or addr2 == "":
             raise IndexError
         else:
-            SRC.main.diff_seek(addr1, addr2)
+            # SRC.main.diff_seek(addr1, addr2)
+            similarity = Test.test.tf_similarity(addr1, addr2)
             # print(addr1)
             # print(addr2)
+            print(similarity)
             return None
     except IndexError as e:
         print("请你传入,源文件和待检测文件的地址!\n")
